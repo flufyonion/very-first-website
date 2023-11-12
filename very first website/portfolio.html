@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="gallery">Let Us Inspire Us</div>
+      
+
+    <div class="photo">
+      <div class="image-box">
+        <img src="beach house1new.jpg">
+      </div>
+      <div class="image-box">
+        <img src="brick-country-home.jpg">
+      </div>
+      <div class="image-box">
+        <img src="new-modern-kitchen-with-large-windows.jpg">
+      </div>
+      <div class="image-box">
+        <img src="beach house 5.jpg">
+      </div>
+      
+      
+
+    
+      <style>
+
+.photo {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  margin: 5% auto 0;
+  box-sizing: border-box;
+  padding-bottom: 30px;
+}
+.image-box {
+  margin: 0 %;
+  flex-grow: 1;
+  flex-basis: 0;
+  transition: 0.8s;
+  margin-bottom: 100px;
+}
+.image-box img {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  transition: 0.5s;
+  padding-bottom: 20px;
+}
+.image-box:hover {
+  flex-basis: 50%;
+}
+
+body {
+  background-color: lightblue;
+}
+.gallery {
+  color: black;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 60px;
+    font-style: italic;
+    font-weight: bold;
+    z-index: 1;
+    cursor: pointer;
+    text-align: center; 
+    
+   
+
+@keyframes fadeIn {
+    to {
+        opacity: 1; 
+    }
+}
+.gallery:hover {
+    color: yellow;
+    transition: 3.5s ease-out 5ms;
+}
+
+.sale {
+  color: black;
+    margin: auto;
+   
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    z-index: 0;
+    cursor: pointer;
+    text-align: center;
+     
+
+}
+
+nav {
+    
+    border: 2px solid black;
+    z-index: 10;   
+    
+    }
+    nav ul {
+    text-align: center;
+    width: 100%; 
+    
+    
+    }
+    nav ul li {
+        display: inline-block;
+        position: relative;
+        text-decoration: none;
+        margin-top: 20px;
+       padding-right: 30px;        
+        
+    }
+    nav ul li a {
+        text-decoration: none;
+        text-decoration-color: yellow;
+        color: black;
+        font-weight: bold;
+        font-style: italic;
+        text-transform: uppercase;
+        font-size: 20px;
+        
+            
+    }
+    
+
+      </style>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: lightblue;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color:  yellow;
+            transition: color 1ms ease-in 0.5ms;
+        }
+
+        nav {
+    
+    border: 2px solid black;
+    z-index: 10;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 40px;
+    border-radius: 40px;
+    
+    }
+    nav ul {
+    text-align: center;
+    
+    }
+    nav ul li {
+        display: inline-block;
+        position: relative;
+        text-decoration: none;
+        margin-top: 20px;
+        padding-right: 30px;
+        
+    }
+    nav ul li a {
+        text-decoration: none;
+        text-decoration-color: yellow;
+        color: white;
+        font-weight: bold;
+        font-style: italic;
+        text-transform: uppercase;
+        font-size: 20px;
+        
+            
+    }
+    
+    </style>
+</head>
+<body>
+
+    <h1>Contact Us</h1>
+
+    <form action="your-server-script.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
